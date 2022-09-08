@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
+plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -39,4 +39,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 sudo /etc/init.d/postgresql start
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
